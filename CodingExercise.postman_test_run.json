@@ -1,0 +1,166 @@
+{
+	"id": "cc9ea0f7-8b11-4f7d-ada0-6e3660ee1d14",
+	"name": "CodingExercise",
+	"timestamp": "2022-03-15T08:21:50.776Z",
+	"collection_id": "12951998-4cf7d887-fc3b-4b02-9de7-9b9c89644516",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "9fd06f5e-c50c-4173-8751-ada22f9ebd94",
+			"name": "Get Single User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 40,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Id is 2 and first name is Janet": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is 2 and first name is Janet": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Id is 2 and first name is Janet": true
+				}
+			]
+		},
+		{
+			"id": "3ee886dd-0ade-4325-bc53-e97c3ce0bdaf",
+			"name": "Update User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 113,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"UpdatedAt is equal": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"UpdatedAt is equal": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"UpdatedAt is equal": false
+				}
+			]
+		},
+		{
+			"id": "b01a7848-5987-4ab8-9b62-d65064e64cb3",
+			"name": "Delete user",
+			"url": "https://reqres.in/api/users/2",
+			"time": 119,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"response body is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"response body is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"response body is empty": true
+				}
+			]
+		},
+		{
+			"id": "e8b74cbb-8f99-4f03-9bd0-921ff6041973",
+			"name": "Create user",
+			"url": "https://reqres.in/api/users",
+			"time": 127,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Name is morpheus": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is morpheus": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Name is morpheus": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 399,
+	"collection": {
+		"requests": [
+			{
+				"id": "9fd06f5e-c50c-4173-8751-ada22f9ebd94",
+				"method": "GET"
+			},
+			{
+				"id": "3ee886dd-0ade-4325-bc53-e97c3ce0bdaf",
+				"method": "PUT"
+			},
+			{
+				"id": "b01a7848-5987-4ab8-9b62-d65064e64cb3",
+				"method": "DELETE"
+			},
+			{
+				"id": "e8b74cbb-8f99-4f03-9bd0-921ff6041973",
+				"method": "POST"
+			}
+		]
+	}
+}
